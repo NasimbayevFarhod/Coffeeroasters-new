@@ -168,6 +168,7 @@ body{
 
 .hero__info
 {
+  margin: 0 auto;
   max-width: 280px;
   display: flex;
   flex-direction: column;
@@ -231,11 +232,13 @@ body{
 
   .hero__iner
   {
+
     padding: 114px 58px;
   }
 
   .hero__info
   {
+    margin: 0;
     max-width: 398px;
     align-items: start;
   }
