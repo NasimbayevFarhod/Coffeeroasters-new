@@ -1305,7 +1305,7 @@ background-image: url(../images/Combined\ Shape-canada.svg);
 
 }
 
-@media only screen and (min-width:100px)
+@media only screen and (min-width:1000px)
 {
   .quarters__list
   {
