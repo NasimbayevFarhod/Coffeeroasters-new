@@ -523,6 +523,16 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
 .site-footer
 {
   background-color: var(--dark-grey);
@@ -614,11 +624,6 @@ img{
     margin:0 32px;
   }
 
-
-
-
-
-
 }
 
 
@@ -663,20 +668,56 @@ img{
   }
 }
 
-@media only screen and (min-width: 640px)
+@media only screen and (min-width: 770px)
 {
   .works
   {
     padding: 400px 0 144px;
   }
 
-
-
   .works__inner
   {
     padding: 0 20px;
     align-items: flex-start;
   }
+
+.decoration
+{
+  width:760px;
+  position: relative;
+  display: flex;
+}
+
+.line
+{
+  position: absolute;
+  z-index: 0;
+  top: 17px;;
+  width: 760px;
+  height: 2px;
+  background-color:#FDD6BA;
+}
+
+
+.ovl
+{
+  z-index: 1;
+  display: block;
+  width: 31px;
+  height: 31px;
+  background: #FEFCF7;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+}
+
+
+.ovl:not(:last-child)
+{
+  margin-right:330px;
+}
+
+
+
 
   .work__line
   {
@@ -688,27 +729,23 @@ img{
   }
 
 
-  .line {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #110e0c;
-  }
-
   .works__list
   {
     width: 100%;
     display: flex; 
-    justify-content: space-between; 
   }
 
   .works__item
   {
     position: relative;
     align-items: start;
-    max-width: 223px;
+    min-width: 285px;
     display: block;
+  }
+
+  .works__item:not(:last-child)
+  {
+    margin-right:70px;
   }
 
   .works__item:nth-child(2)
@@ -729,8 +766,28 @@ img{
     text-align: left;
   }
 
-
 }
+
+
+
+@media only screen and (min-width: 1150px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 640px) and (max-width:999px) 
 {
@@ -1312,6 +1369,256 @@ background-image: url(../images/Combined\ Shape-canada.svg);
     padding-right: 280px;
   }
 }
+
+
+
+
+
+
+.subscribe__inner {
+  padding:101px 24px 136px ;
+  background-image: url(../images/Bitmapsubscribe-tel-hero-img.jpg);
+  background-position: calc(50% + 50px) calc(50%);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.subscribe__title {
+  margin-bottom: 22px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.subscribe__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+
+@media only screen and (min-width: 700px)
+{
+  .subscribe__inner {
+    padding:127px 0 126px 58px;
+    background-image: url(../images/Bitmapsubscribe-tablet-hero-img.jpg.jpg);
+    
+    background-position: calc(0%) calc(50%);
+  }
+  .subscribe__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+  }
+  .subscribe__text {
+    max-width: 398px;
+    text-align: left; 
+  }
+
+}
+
+
+@media only screen and (min-width: 1100px)
+{
+  .subscribe__inner {
+    padding:127px 0 126px 58px;
+    background-image: url(../images/Group\ 7subscribe-desktop-hero-img.jpg.png);
+    background-position: calc(0%) calc(50% - 1px);
+    background-size: cover;
+  }
+  .subscribe__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+  }
+  .subscribe__text {
+    max-width: 398px;
+    text-align: left; 
+  }
+
+}
+
+
+
+
+
+.subscribe-second__inner {
+  padding: 100px 0 100px 85px;
+  background-color: var(--dark-grey);
+  border-radius: 10px;
+}
+
+.line-box
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 791px;
+  height: 31px;
+  margin-bottom: 67px;
+}
+.subscribe-second__line {
+  position: absolute;
+  display: block;
+  width: 760px;
+  height: 1px;
+  top: 15px;
+  left: 15px;
+  background-color: #FDD6BA;
+}
+.subscribe-second__oval {
+  display: block;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+}
+.subscribe-second__list {
+  display: flex;
+  list-style: none;
+}
+.subscribe-second__item {
+  max-width: 285px;
+}
+
+.subscribe-second__item:not(:last-child) {
+  margin-right: 95px;
+}
+
+.subscribe-second__number {
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+.subscribe-second__title {
+  max-width: 255px;
+  margin: 38px 0 42px;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FEFCF7;
+}
+.subscribe-second__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+
+
+@media only screen and (max-width: 1160px)
+{
+
+  .subscribe-second__inner {
+    padding: 100px 40px 70px;
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+  }
+
+  .line-box
+  {
+    width: 497px;
+    margin-bottom: 48px;
+  }
+  .subscribe-second__line {
+    width: 467px;
+  }
+
+  .subscribe-second__item {
+    max-width: 223px;
+  }
+
+  .subscribe-second__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .subscribe-second__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .subscribe-second__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  
+
+
+}
+
+
+@media only screen and (max-width: 790px)
+{
+
+  
+  .subscribe-second__inner {
+    padding: 80px 24px ;
+    border-radius: 10px;
+  }
+
+  .line-box
+  {
+    display: none;
+  }
+
+  .subscribe-second__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .subscribe-second__item
+  {
+    max-width:327px ;
+  }
+
+  .subscribe-second__item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 56px;
+  }
+  
+  .subscribe-second__number {
+    text-align: center;
+  }
+  .subscribe-second__title {
+    max-width: 327px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .subscribe-second__text {
+    text-align: center;
+  }
+  
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
